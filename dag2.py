@@ -26,7 +26,7 @@ from airflow.operators.latest_only import LatestOnlyOperator
 from airflow.utils.dates import days_ago
 
 with DAG(
-    dag_id='latest_only',
+    dag_id='devendra-managed-dag-1',
     schedule_interval=dt.timedelta(hours=4),
     start_date=days_ago(2),
     tags=['example2', 'example3'],
