@@ -45,7 +45,7 @@ default_args = {
 
 
 # Using a DAG context manager, you don't have to specify the dag property of each task
-with DAG('s3_upload_copy',
+with DAG('devendra-dag-example-2',
          start_date=datetime(2019, 1, 1),
          max_active_runs=1,
          schedule_interval='0 12 8-14,22-28 * 6',  # https://airflow.apache.org/docs/stable/scheduler.html#dag-runs
